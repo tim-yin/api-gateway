@@ -1,0 +1,1 @@
+2016-03-08 11:17:28,228 ERROR [http-nio-8086-exec-1] c.n.a.g.e.OpenApiHandlerExceptionResolver - 客户端缺失如下必填字段:[app_version, version, channel, current_time, sign],不能通过拦截器验证！

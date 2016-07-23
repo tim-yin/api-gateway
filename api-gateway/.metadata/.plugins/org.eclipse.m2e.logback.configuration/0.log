@@ -1,0 +1,71 @@
+2015-12-01 17:21:44,964 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.niwodai.app:api-gateway:0.0.1-SNAPSHOT @ E:\api-gateway\pom.xml.
+2015-12-01 17:21:46,895 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/main/java
+2015-12-01 17:21:46,895 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2015-12-01 17:21:46,896 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2015-12-01 17:21:46,897 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/test/java
+2015-12-01 17:21:47,532 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.niwodai.app:api-gateway:0.0.1-SNAPSHOT @ E:\api-gateway\pom.xml.
+2015-12-01 17:21:48,441 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2015-12-01 17:21:53,188 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-01 17:21:53,193 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-01 17:21:53,209 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-12-01 17:21:53,216 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-01 17:21:53,216 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\api-gateway\src\test\resources
+2015-12-01 17:21:54,828 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-01 17:21:54,829 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-01 17:21:54,830 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-01 17:21:54,833 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-01 17:21:54,834 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\api-gateway\src\test\resources
+2015-12-01 17:22:00,977 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.niwodai.app:api-gateway:0.0.1-SNAPSHOT @ E:\api-gateway\pom.xml.
+2015-12-01 17:22:01,645 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-01 17:22:01,647 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-01 17:22:01,649 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-12-01 17:22:01,654 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-01 17:22:01,655 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\api-gateway\src\test\resources
+2015-12-01 17:22:17,955 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-12-01 17:22:25,211 [Worker-7] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\api-gateway
+2015-12-01 17:22:25,211 [Worker-7] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-12-01 17:23:45,825 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2015-12-01 17:23:45,951 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\api-gateway
+2015-12-01 17:23:45,951 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-12-01 17:28:41,728 [Worker-2] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Unable to create project from archetype [org.apache.maven.archetypes:maven-archetype-quickstart:RELEASE]
+org.apache.maven.archetype.old.ArchetypeTemplateProcessingException: Unable to add module to the current project as it is not of packaging type 'pom'
+	at org.apache.maven.archetype.old.DefaultOldArchetype.createArchetype(DefaultOldArchetype.java:308) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.generator.DefaultArchetypeGenerator.processOldArchetype(DefaultArchetypeGenerator.java:253) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.generator.DefaultArchetypeGenerator.generateArchetype(DefaultArchetypeGenerator.java:143) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.generator.DefaultArchetypeGenerator.generateArchetype(DefaultArchetypeGenerator.java:286) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.DefaultArchetype.generateProjectFromArchetype(DefaultArchetype.java:69) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.createArchetypeProjects0(ProjectConfigurationManager.java:770) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$5.call(ProjectConfigurationManager.java:719) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$5.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:166) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:142) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:96) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1348) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.createArchetypeProjects(ProjectConfigurationManager.java:717) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizard$5.doCreateMavenProjects(MavenProjectWizard.java:244) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstactCreateMavenProjectJob$1.doCreateMavenProjects(AbstactCreateMavenProjectJob.java:46) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:62) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstactCreateMavenProjectJob.runInWorkspace(AbstactCreateMavenProjectJob.java:50) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.0.v20140424-0053.jar:na]
+2015-12-01 17:29:51,524 [Worker-2] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Unable to create project from archetype [org.apache.maven.archetypes:maven-archetype-quickstart:RELEASE]
+org.apache.maven.archetype.old.ArchetypeTemplateProcessingException: Unable to add module to the current project as it is not of packaging type 'pom'
+	at org.apache.maven.archetype.old.DefaultOldArchetype.createArchetype(DefaultOldArchetype.java:308) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.generator.DefaultArchetypeGenerator.processOldArchetype(DefaultArchetypeGenerator.java:253) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.generator.DefaultArchetypeGenerator.generateArchetype(DefaultArchetypeGenerator.java:143) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.generator.DefaultArchetypeGenerator.generateArchetype(DefaultArchetypeGenerator.java:286) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.DefaultArchetype.generateProjectFromArchetype(DefaultArchetype.java:69) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.createArchetypeProjects0(ProjectConfigurationManager.java:770) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$5.call(ProjectConfigurationManager.java:719) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$5.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:166) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:142) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:96) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1348) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.createArchetypeProjects(ProjectConfigurationManager.java:717) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizard$5.doCreateMavenProjects(MavenProjectWizard.java:244) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstactCreateMavenProjectJob$1.doCreateMavenProjects(AbstactCreateMavenProjectJob.java:46) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:62) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstactCreateMavenProjectJob.runInWorkspace(AbstactCreateMavenProjectJob.java:50) [org.eclipse.m2e.core.ui_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.0.v20140424-0053.jar:na]

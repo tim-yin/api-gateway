@@ -1,0 +1,206 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.niwodai.app</groupId>
+	<artifactId>api-gateway</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>nwd-api-gateway</name>
+	<url>http://maven.apache.org</url>
+
+
+	<organization>
+		<name>niwodai</name>
+		<url>http://www.niwodai.com/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>tim.yin</id>
+			<name>尹伟</name>
+			<email>yinwei19850707@gmail.com</email>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- 项目启动指定的启动类 -->
+		<start-class>com.niwodai.app.gateway.ApplicationBootstrap</start-class>
+		<org.apache.commons>3.1</org.apache.commons>
+		<guava.version>18.0</guava.version>
+		<slf4j.version>1.6.6</slf4j.version>
+		<junit.version>4.12</junit.version>
+		<spring.boot.starter.web.version>1.2.6.RELEASE</spring.boot.starter.web.version>
+		<dubbox.version>2.8.4</dubbox.version>
+		<zookeeper.version>3.4.6</zookeeper.version>
+		<curator.framework.version>2.5.0</curator.framework.version>
+		<metrics.version>3.1.2</metrics.version>
+		<validation.api.version>1.1.0.Final</validation.api.version>
+		<com.sdicons.jsontools.version>1.7</com.sdicons.jsontools.version>
+		<oltu.version>1.0.0</oltu.version>
+		<shiro.version>1.2.3</shiro.version>
+	</properties>
+
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.2.5.RELEASE</version>
+	</parent>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<!-- 使用 Spring Boot 默认的日志框架 Logback -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+ 		<!-- dubbo -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbox.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+				<!-- 干掉 freemarker 它会引用到log4j -->
+				<exclusion>
+					<groupId>org.freemarker</groupId>
+					<artifactId>freemarker</artifactId>
+				</exclusion>
+				
+				<!--  干掉所有跟log4j有关的日志框架 避免跟logback发生冲突 -->
+				<exclusion>
+						<artifactId>log4j</artifactId>
+						<groupId>log4j</groupId>
+				</exclusion>  
+		        <exclusion>  
+			           <artifactId>slf4j-log4j12</artifactId>  
+			           <groupId>org.slf4j</groupId>  
+		        </exclusion>  
+		        <exclusion>  
+			           <artifactId>slf4j-api</artifactId>  
+			           <groupId>org.slf4j</groupId>  
+		        </exclusion>
+			</exclusions>
+		</dependency>
+
+		<!--  zookeeper -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>${zookeeper.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- 客户端 curator 替换掉  zkclient  -->
+		<dependency>
+				<groupId>org.apache.curator</groupId>
+				<artifactId>curator-framework</artifactId>
+				<version>${curator.framework.version}</version>
+				<scope>runtime</scope>
+		</dependency>
+
+		<!-- commons-lang3 depend -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${org.apache.commons}</version>
+		</dependency>
+
+
+		<!-- guava depend -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+		
+		<!--兼容 hibernate-validator-5.x.x hibernate-validator-5.x.xhibernate-validator-5.x.x已经把旧的校验框架JSR-303，改变为JSR-349 -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${validation.api.version}</version>
+		</dependency>
+		
+		<dependency>
+	    	<groupId>com.ryantenney.metrics</groupId>
+	   		<artifactId>metrics-spring</artifactId>
+	   		<version>${metrics.version}</version>
+		</dependency>
+		
+		 <!--引入oltu 支持oauth2.0 开放平台-->
+        <dependency>
+            <groupId>org.apache.oltu.oauth2</groupId>
+            <artifactId>org.apache.oltu.oauth2.authzserver</artifactId>
+            <version>${oltu.version}</version>
+        </dependency>
+		
+		<!-- 这块主要做shiro 安全 开始-->
+		<dependency>  
+	        <groupId>org.apache.shiro</groupId>  
+	        <artifactId>shiro-core</artifactId>  
+	        <version>${shiro.version}</version>  
+	    </dependency>
+	    <dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>${shiro.version}</version>
+		</dependency> 
+		<dependency>  
+		    <groupId>mysql</groupId>  
+		    <artifactId>mysql-connector-java</artifactId>  
+		    <version>5.1.25</version>  
+		</dependency>  
+		<dependency>  
+		    <groupId>com.alibaba</groupId>  
+		    <artifactId>druid</artifactId>  
+		    <version>0.2.23</version>  
+		</dependency>
+		<!-- 这块主要做shiro 安全 结束-->
+
+		<dependency>
+            <groupId>com.sdicons.jsontools</groupId>
+            <artifactId>jsontools-core</artifactId>
+            <version>${com.sdicons.jsontools.version}</version>
+        </dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
