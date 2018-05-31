@@ -4,7 +4,7 @@
     
     <!--  可以定义logger  对不同的类采取不同的日志记录方式 -->
 	<!-- 类的全路径 -->   
-	<!-- <logger name="com.niwodai.app.gateway.remote.call.impl.RemoteDubboCallComposite" level="DEBUG" additivity="false">  
+	<!-- <logger naRemoteDubboCallCompositesite" level="DEBUG" additivity="false">
 	    <appender-ref ref="STDOUT"/>  
 	</logger> -->
 	  

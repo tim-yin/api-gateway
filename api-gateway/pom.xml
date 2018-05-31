@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.niwodai.app</groupId>
+	<groupId>com.fly.app</groupId>
 	<artifactId>api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -12,8 +12,8 @@
 
 
 	<organization>
-		<name>niwodai</name>
-		<url>http://www.niwodai.com/</url>
+		<name>fly</name>
+		<url>http://www.fly.com/</url>
 	</organization>
 
 	<developers>
@@ -27,7 +27,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- 项目启动指定的启动类 -->
-		<start-class>com.niwodai.app.gateway.ApplicationBootstrap</start-class>
+		<start-class>com.fly.app.gateway.ApplicationBootstrap</start-class>
 		<org.apache.commons>3.1</org.apache.commons>
 		<guava.version>18.0</guava.version>
 		<slf4j.version>1.6.6</slf4j.version>
